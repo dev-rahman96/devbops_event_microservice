@@ -18,7 +18,7 @@
    - name: Start the container
      docker_container: 
        name: event-micro
-       image: "devrahman96/eventwithansible{{DOCKER_TAG}}"
+       image: 'devrahman96/eventwithansible{{DOCKER_TAG}}'
        state: started
        published_ports:
          - 0.0.0.0:8080:8080
