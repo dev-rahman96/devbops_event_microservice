@@ -18,7 +18,7 @@ class BasicTestCase(unittest.TestCase):
         rv = self.app.get('/event-view')
         data = json.loads(rv.data)
         #print(data['Status'], data['Error'])
-        assert data['Result'] == False
+        assert data['Result'] == True
 
     def test_2_creating(self):
         req = {
